@@ -1,13 +1,15 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "reverierising",
+    siteUrl: "http://reverie-rising.local",
+    title: "Reverie Rising",
+    description: "add here",
+    author: "Kayley Klindt"
   },
   plugins: [
     {
       resolve: "gatsby-source-wordpress",
       options: {
-        url: "https://reverierising.co/graphql",
+        url: "http://reverie-rising.local/graphql",
       },
     },
     "gatsby-plugin-styled-components",

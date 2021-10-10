@@ -1,3 +1,12 @@
+### My Notes
+
+- run the site `npm run develop`
+
+TODOS:
+
+1. How to link Gatsby frontend to local Wordpress
+2. How to upload local to production Wordpress without changing anything else (blog posts, plugins, etc.)
+
 <p align="center">
   <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
