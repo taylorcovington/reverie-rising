@@ -6,7 +6,6 @@ export const HeaderWrapper = styled.div`
   justify-content: center;
   letter-spacing: 1px;
   text-align: center;
-  margin: 15px 0;
 `;
 
 export const LogoWrapper = styled.div`
