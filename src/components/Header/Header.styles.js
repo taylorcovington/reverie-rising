@@ -8,3 +8,7 @@ export const HeaderWrapper = styled.div`
   text-align: center;
   margin: 15px 0;
 `;
+
+export const LogoWrapper = styled.div`
+  padding: 35px 0;
+`

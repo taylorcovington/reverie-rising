@@ -2,9 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import logo from '../../images/logo.png'
 import { useMenuQuery } from '../../hooks/useMenuQuery'
-import { HeaderWrapper } from './Header.styles'
+import { HeaderWrapper, LogoWrapper } from './Header.styles'
 import Nav from '../Nav/Nav'
-// import { Wrapper, Content } from './Nav.styles'
 
 const Header = () => {
   const data = useMenuQuery()
@@ -20,13 +19,14 @@ const Header = () => {
   //sub heading data
   const {menuItems: subMenuItems} = subMenu
   //end sub heading data
+  
   return (
     <HeaderWrapper>
-      <div>
+      <LogoWrapper>
         <Link to='/'>
           <img src={logo} alt={siteMetadata.title}/>
         </Link>
-      </div>
+      </LogoWrapper>
       <div>
       <Nav menu={menuItems} menuType='main'/>
       </div>
