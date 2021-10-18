@@ -9,5 +9,5 @@ export const HeaderWrapper = styled.div`
 `;
 
 export const LogoWrapper = styled.div`
-  padding: 35px 0;
+  padding: 25px 0;
 `
