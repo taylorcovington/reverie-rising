@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 module.exports = {
   siteMetadata: {
     siteUrl: "http://reverie-rising.local",
@@ -9,11 +11,13 @@ module.exports = {
     {
       resolve: "gatsby-source-wordpress",
       options: {
-        url: "http://reverie-rising.local/graphql",
+        url: process.env.WORDPRESS_URL,
       },
     },
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
