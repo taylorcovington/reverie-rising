@@ -2,6 +2,7 @@ import * as React from "react"
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import styled from 'styled-components'
 import Layout from "../components/Layout/Layout"
+import { Hero } from "../components/Hero/Hero"
 
 // styles
 
@@ -115,7 +116,7 @@ const IndexPage = () => {
   return (
     <>
     <Layout >
-      <h1>Reverie Rising</h1>
+      <Hero />
       {nodes.map(({id, title, uri, excerpt}) => (
         <>
         <h3>{title}</h3>
