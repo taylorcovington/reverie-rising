@@ -3,6 +3,7 @@ import { useStaticQuery, graphql, Link } from 'gatsby'
 import styled from 'styled-components'
 import Layout from "../components/Layout/Layout"
 import { Hero } from "../components/Hero/Hero"
+import { LatestBlogPosts } from "../components/LatestBlogPosts/LatestBlogPosts"
 
 // styles
 
@@ -97,33 +98,34 @@ const navStyle = {
 // markup
 const IndexPage = () => {
   // data
-  const data = useStaticQuery(graphql`
-  {
-    allWpPost {
-    nodes {
-      id
-      title
-      uri
-      excerpt
-    }
-  }
-  }
-  `)
+  // const data = useStaticQuery(graphql`
+  // {
+  //   allWpPost {
+  //   nodes {
+  //     id
+  //     title
+  //     uri
+  //     excerpt
+  //   }
+  // }
+  // }
+  // `)
 
-  console.log('data: ', data)
-  const { allWpPost } = data
-  const { nodes } = allWpPost
+  // console.log('data: ', data)
+  // const { allWpPost } = data
+  // const { nodes } = allWpPost
   return (
     <>
     <Layout >
       <Hero />
-      {nodes.map(({id, title, uri, excerpt}) => (
+      <LatestBlogPosts />
+      {/* {nodes.map(({id, title, uri, excerpt}) => (
         <>
         <h3>{title}</h3>
         <p><span dangerouslySetInnerHTML={{__html: excerpt}} /></p>
         <Link to={uri}>Read more ...</Link>
         </>
-    ))}
+    ))} */}
     </Layout>
     </>
     // <main style={pageStyles}>
